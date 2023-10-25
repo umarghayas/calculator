@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <section class="container">
+        <div class="screen">
+            <input type="text" id="result" placeholder="0">
+        </div>
+        <div class="calcbody">
+            <table>
+                <tr>
+                    <td><button class="lightgrey" onclick="clearAll()">A</button></td>
+                    <td><button class="lightgrey" onclick="erase()">C</button></td>
+                    <td><button class="lightgrey" onclick="percent()">%</button></td>
+                    <td><button class="yellow" onclick="calc('/')">/</button></td>
+                </tr>
+                <tr class="darkgrey">
+                    <td><button onclick="calc(7)">7</button></td>
+                    <td><button onclick="calc(8)">8</button></td>
+                    <td><button onclick="calc(9)">9</button></td>
+                    <td><button class="yellow" onclick="calc('*')">X</button></td>
+                </tr>
+                <tr class="darkgrey">
+                    <td><button onclick="calc(4)">4</button></td>
+                    <td><button onclick="calc(5)">5</button></td>
+                    <td><button onclick="calc(6)">6</button></td>
+                    <td><button class="yellow" onclick="calc('-')">-</button></td>
+                </tr>
+                <tr class="darkgrey">
+                    <td><button onclick="calc(1)">1</button></td>
+                    <td><button onclick="calc(2)">2</button></td>
+                    <td><button onclick="calc(3)">3</button></td>
+                    <td><button class="yellow" onclick="calc('+')">+</button></td>
+                </tr>
+                <tr class="darkgrey">
+                    <td colspan="2"><button class="zero" onclick="calc(0)">0</button></td>
+                    <td><button onclick="calc('.')">.</button></td>
+                    <td><button class="yellow" onclick="equals()">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+</html>
